@@ -1,0 +1,103 @@
+<html lang="se">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            .textwindow{
+                height: 20px;
+                width: 20px;
+                border: 1px solid black;
+                text-align-last: center;
+                font-style: bold;
+                
+            }
+            
+            body{
+               display: block;
+               margin: 0px;
+               justify-content: center;
+               height: 100%;
+               width: 100%;
+               background-color: aqua;
+               color: rgb(0, 0, 0);
+               grid-template-columns: 50px 50px 50px 50px 50px;
+               grid-template-rows: 50px 50px 50px 50px 50px;
+            }
+            h1{
+                text-align: center;
+                position: absolute;
+                align-items: center;
+            }
+            #top{
+                text-align: center;
+                width: 100%;
+                height: 100px;
+                justify-content: center;
+                background-color: aqua;
+            }
+            #top h1{
+                width: 100%;
+            }
+            #body2{
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 50px 50px 50px 50px 50px;
+                grid-template-rows: 50px 50px 50px 50px 50px;
+                justify-content: center;
+              
+            }
+            .textwindow span{
+                pointer-events: none;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div id="top">
+            <h1 id="hangmanText">HANGMAN MINIGAMES</h1>
+        </div>
+        <div id="body2">
+            <button id="textwindow" class="textwindow" onclick="buttonClick('a')"><span>A</span></button>
+            <button id="textwindow2" class="textwindow" onclick="buttonClick('b')"><span>B</span></button>
+            <div id="textwindow3" class="textwindow" onclick="buttonClick('c')">C</div>
+            <div id="textwindow4" class="textwindow"onclick="buttonClick('d')">D</div>
+            <div id="textwindow5" class="textwindow"onclick="buttonClick('e')">E</div>
+            <div id="textwindow6" class="textwindow"onclick="buttonClick('f')">F</div>
+            <div id="textwindow7" class="textwindow"onclick="buttonClick('g')">G</div>
+            <div id="textwindow8" class="textwindow"onclick="buttonClick('h')">H</div>
+            <div id="textwindow9" class="textwindow"onclick="buttonClick('i')">I</div>
+            <div id="textwindow10" class="textwindow"onclick="buttonClick('j')">J</div>
+            <div id="textwindow11" class="textwindow"onclick="buttonClick('k')">K</div>
+            <div id="textwindow12" class="textwindow"onclick="buttonClick('l')">L</div>
+            <div id="textwindow13" class="textwindow"onclick="buttonClick('m')">M</div>
+            <div id="textwindow14" class="textwindow"onclick="buttonClick('n')">N</div>
+            <div id="textwindow15" class="textwindow"onclick="buttonClick('o')">O</div>
+            <div id="textwindow16" class="textwindow"onclick="buttonClick('p')">P</div>
+            <div id="textwindow17" class="textwindow"onclick="buttonClick('q')">Q</div>
+            <div id="textwindow18" class="textwindow"onclick="buttonClick('r')">R</div>
+            <div id="textwindow19" class="textwindow"onclick="buttonClick('s')">S</div>
+            <div id="textwindow20" class="textwindow"onclick="buttonClick('t')">T</div>
+            <div id="textwindow21" class="textwindow"onclick="buttonClick('u')">U</div>
+            <div id="textwindow22" class="textwindow"onclick="buttonClick('v')">V</div>
+            <div id="textwindow23" class="textwindow"onclick="buttonClick('w')">W</div>
+            <div id="textwindow24" class="textwindow"onclick="buttonClick('x')">X</div>
+            <div id="textwindow25" class="textwindow"onclick="buttonClick('y')">Y</div>
+            <div id="textwindow26" class="textwindow"onclick="buttonClick('z')">Z</div>
+            <div id="textwindow27" class="textwindow"onclick="buttonClick('å')">Å</div>
+            <div id="textwindow28" class="textwindow"onclick="buttonClick('ä')">Ä</div>
+            <div id="textwindow29" class="textwindow"onclick="buttonClick('ö')">Ö</div>
+        </div>
+        <h2></h2>
+        <script>
+          function buttonClick(letter){
+            console.log(letter)
+            document.getElementById("hangmanText").innerText = document.getElementById("hangmanText").innerText + letter
+          }
+        </script>
+    </body>
+</html>
